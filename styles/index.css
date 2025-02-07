@@ -12,13 +12,9 @@ body {
 
 .section {
   width: 100%;
-  height: 100vh; /* 화면에 꽉 차도록 설정 */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
+  height: 100vh;
+
   font-weight: bold;
-  transition: transform 0.5s ease-in-out;
 }
 
 .section:nth-child(1) {
@@ -32,4 +28,17 @@ body {
 }
 .section:nth-child(4) {
   background: #33cc33;
+}
+
+#section-a {
+  margin: 0;
+  padding-top: 220px;
+  text-align: center;
+  font-size: 60px;
+}
+
+#section-a-paragraph {
+  text-align: center;
+  font-weight: normal;
+  font-size: 20px;
 }
