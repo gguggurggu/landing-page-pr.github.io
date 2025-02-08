@@ -1,3 +1,3 @@
-import { scrollEvent } from "../scripts/func/page-scroll.js";
+import { customScroll } from "../scripts/func/custom-scroll.js";
 
-scrollEvent();
+customScroll();
