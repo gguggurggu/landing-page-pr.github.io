@@ -7,7 +7,7 @@ body {
   padding: 0;
   width: 100%;
   height: 100vh;
-  overflow: auto;
+  overflow: hidden;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -78,11 +78,19 @@ body::-webkit-scrollbar {
   border-radius: 30px;
   font-size: 20px;
   font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
   z-index: 2;
 }
 #discover-button:hover {
   background-color: rgb(255, 205, 5);
   color: rgb(11, 85, 150);
-  font-size: 20px;
-  font-weight: bold;
+  transform: scale(1.05);
+}
+#discover-button:active {
+  background-color: rgb(200, 160, 0);
+  color: rgb(0, 45, 105);
+  transform: scale(1);
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
 }
