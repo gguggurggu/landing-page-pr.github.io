@@ -5,7 +5,7 @@ export function autoScroll() {
 
   function slideImages() {
     if (!isPaused) {
-      position -= 0.35; // 이동 속도
+      position -= 0.35;
       container.style.transform = `translateX(${position}px)`;
 
       if (Math.abs(position) >= container.scrollWidth / 2) {
@@ -15,18 +15,11 @@ export function autoScroll() {
     requestAnimationFrame(slideImages);
   }
 
-  // 클릭 중일 때 멈추기
-  container.addEventListener("mousedown", (e) => {
-    e.preventDefault(); // 드래그 방지
+  container.addEventListener("mouseenter", (e) => {
+    e.preventDefault();
     isPaused = true;
   });
 
-  // 클릭을 놓으면 재개
-  container.addEventListener("mouseup", () => {
-    isPaused = false;
-  });
-
-  // 컨테이너 밖으로 나가면 재개 (드래그 상태에서 벗어나는 경우 방지)
   container.addEventListener("mouseleave", () => {
     isPaused = false;
   });
