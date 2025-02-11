@@ -17,16 +17,17 @@ body {
 body::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../img/main-page.jpg");
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  background-image: url("../img/stockholm-city.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 0;
   animation: zoomInAndStop 15s ease-in-out forwards;
+  filter: blur(6px);
 }
 @keyframes zoomInAndStop {
   0% {
@@ -37,13 +38,12 @@ body::before {
   }
 }
 
-.section {
+#main-page {
   position: relative;
   width: 100%;
   height: 100vh;
   font-weight: bold;
 }
-
 #main-page::before {
   content: "";
   position: absolute;
@@ -57,11 +57,11 @@ body::before {
 }
 
 #section-main {
-  padding-top: 200px;
+  padding-top: 280px;
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
-  font-size: 70px;
+  font-size: 80px;
   color: #ffffff;
   position: relative;
   z-index: 2;
@@ -71,7 +71,7 @@ body::before {
   margin-bottom: 50px;
   text-align: center;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 19px;
   color: #f5f5f5;
   position: relative;
   z-index: 2;
@@ -84,7 +84,7 @@ body::before {
   z-index: 2;
 }
 #discover-button {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -101,12 +101,12 @@ body::before {
   z-index: 2;
 }
 #discover-button:hover {
-  background-color: rgb(255, 205, 5);
+  background-color: rgb(255, 205, 5, 0.8);
   color: rgb(11, 85, 150);
   transform: scale(1.05);
 }
 #discover-button:active {
-  background-color: rgb(200, 160, 0);
+  background-color: rgb(200, 160, 0, 0.8);
   color: rgb(0, 45, 105);
   transform: scale(1);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
