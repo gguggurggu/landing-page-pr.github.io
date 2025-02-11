@@ -26,7 +26,7 @@ body::before {
   background-position: center;
   background-repeat: no-repeat;
   z-index: 0;
-  animation: zoomInAndStop 15s ease-in-out forwards;
+  animation: zoomInAndStop 8s ease-in-out forwards;
   filter: blur(6px);
 }
 @keyframes zoomInAndStop {
@@ -34,7 +34,7 @@ body::before {
     transform: scale(1);
   }
   100% {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 
