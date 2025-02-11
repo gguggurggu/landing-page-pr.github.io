@@ -108,6 +108,7 @@ body::-webkit-scrollbar {
 }
 .section hr {
   margin-top: 38px;
+  margin-bottom: 38px;
   border: none;
   border-radius: 5px;
   height: 1.5px;
@@ -155,7 +156,7 @@ body::-webkit-scrollbar {
 #welcome-img-container {
   width: 90%;
   max-width: 1136px;
-  height: 450px;
+  height: 380px;
   border-radius: 15px;
   position: relative;
   overflow: hidden;
@@ -182,16 +183,17 @@ body::-webkit-scrollbar {
   position: absolute;
   bottom: 2%;
   left: 5%;
-  font-size: 42px;
+  font-size: 38px;
   color: white;
   z-index: 2;
 }
 
 .banner {
-  margin: 0 auto;
+  display: none;
   width: 90%;
   max-width: 1136px;
-  height: 172px;
+  height: 180px;
+  margin: 0 auto;
   border-radius: 15px;
   position: relative;
   overflow: hidden;
@@ -289,7 +291,6 @@ body::-webkit-scrollbar {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 #llc {
-  margin-top: 38px;
   bottom: 0;
   width: 100%;
   height: 200px;
