@@ -30,7 +30,6 @@
         <input type="search" placeholder="Plan your trip..." />
         <button>Search</button>
       </div>
-
       <div id="welcome-img-container">
         <p id="welcome-page-hello">
           Välkommen till Sverige.<br />Welcome to Sweden.
@@ -38,7 +37,14 @@
         <img src="./img/colorful-house.jpg" />
       </div>
       <div class="empty-div"></div>
+      <div class="banner-container">
+        <div class="banner-element js-banner-weather"></div>
+        <div class="banner-element js-banner-currency">currency</div>
+      </div>
+    </div>
 
+    <div id="destinations" class="section">
+      <hr />
       <div id="banner-sas" class="banner">
         <a
           href="https://www.flysas.com/"
@@ -59,10 +65,7 @@
           Your gateway to Northern Europe. <br />Travel further with Finnair.
         </p>
       </div>
-      <hr />
     </div>
-
-    <div id="destinations" class="section"></div>
     <div id="activities" class="section">activities</div>
     <div id="work-and-stay" class="section">
       <div class="empty-div"></div>
@@ -81,6 +84,7 @@
       <hr />
       <div id="llc">2025-02-07 강유진 제작</div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module" src="./scripts/explore.js"></script>
   </body>
 </html>

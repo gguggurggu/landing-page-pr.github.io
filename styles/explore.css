@@ -103,7 +103,7 @@ body::-webkit-scrollbar {
 .section {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   font-weight: bold;
 }
 .section hr {
@@ -156,7 +156,7 @@ body::-webkit-scrollbar {
 #welcome-img-container {
   width: 90%;
   max-width: 1136px;
-  height: 380px;
+  height: 320px;
   border-radius: 15px;
   position: relative;
   overflow: hidden;
@@ -188,6 +188,27 @@ body::-webkit-scrollbar {
   z-index: 2;
 }
 
+.banner-container {
+  width: 90%;
+  max-width: 1136px;
+  height: 300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.banner-element {
+  border-radius: 15px;
+}
+.daily-weather-info {
+  font-weight: normal;
+  font-size: 18px;
+}
+.daily-weather-info img {
+  width: 40px !important;
+  height: 40px !important;
+}
+
 .banner {
   display: none;
   width: 90%;
@@ -207,7 +228,7 @@ body::-webkit-scrollbar {
 .banner::before {
   content: "";
   position: absolute;
-  object-fit: conver;
+  object-fit: cover;
   width: 100%;
   height: 100%;
   background: linear-gradient(
