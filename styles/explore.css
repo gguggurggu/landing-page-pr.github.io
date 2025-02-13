@@ -52,6 +52,7 @@ body::-webkit-scrollbar {
   background-color: #f5f5f5;
   cursor: pointer;
   z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 #home-button:hover {
   background-color: #e0e0e0;
@@ -70,6 +71,7 @@ body::-webkit-scrollbar {
   background-color: #f5f5f5;
   cursor: pointer;
   z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 #top-button:hover {
   background-color: #e0e0e0;
@@ -115,6 +117,7 @@ body::-webkit-scrollbar {
   background-color: rgba(0, 45, 105, 0.6);
   width: 90%;
   max-width: 1136px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 .empty-div {
   width: 100%;
@@ -134,6 +137,7 @@ body::-webkit-scrollbar {
   max-width: 780px;
   width: 65%;
   height: 60px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 #input-search button {
   border: none;
@@ -145,6 +149,7 @@ body::-webkit-scrollbar {
   border-radius: 40px;
   width: 100px;
   height: 60.75px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 #input-search button:hover {
   background-color: rgba(0, 0, 0, 0.85);
@@ -161,6 +166,7 @@ body::-webkit-scrollbar {
   position: relative;
   overflow: hidden;
   margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 #welcome-page img {
   width: 100%;
@@ -183,7 +189,7 @@ body::-webkit-scrollbar {
   position: absolute;
   bottom: 2%;
   left: 5%;
-  font-size: 38px;
+  font-size: 40px;
   color: white;
   z-index: 2;
 }
@@ -198,15 +204,64 @@ body::-webkit-scrollbar {
   gap: 20px;
 }
 .banner-element {
+  padding: 25px 30px;
   border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+#banner-element-weather {
+  color: #333;
+  background: linear-gradient(
+    135deg,
+    rgba(33, 115, 190, 0.3),
+    rgba(255, 205, 5, 0.3)
+  );
 }
 .daily-weather-info {
+  height: 100%;
   font-weight: normal;
   font-size: 18px;
 }
+#city-name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+#icon-current-temp {
+  margin: 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#current-temp {
+  margin: 0;
+  font-size: 40px;
+  font-weight: bold;
+}
+#current-humidity {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
 .daily-weather-info img {
-  width: 40px !important;
-  height: 40px !important;
+  width: 130px !important;
+  height: 130px !important;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
+}
+#description-temp-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+#temp-divider {
+  margin: 0;
+  width: 1px;
+  height: 25px;
+  background-color: #666;
+}
+#banner-element-currency {
+  background-color: white;
 }
 
 .banner {
@@ -218,6 +273,7 @@ body::-webkit-scrollbar {
   border-radius: 15px;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 .banner img {
   width: 100%;
@@ -258,6 +314,7 @@ body::-webkit-scrollbar {
   position: relative;
   overflow: hidden;
   margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 .img-container img {
   width: 100%;

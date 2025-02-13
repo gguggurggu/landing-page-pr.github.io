@@ -5,18 +5,20 @@ export function weather() {
 
   async function getWeather() {
     try {
-      const response = await axios.get(url); // axios는 전역 변수로 사용
+      const response = await axios.get(url);
       const weatherData = response.data;
 
       const cityName = weatherData.name;
       const temperature = weatherData.main.temp;
-      const feels_like = weatherData.main.feels_like;
+      const feelsLike = weatherData.main.feels_like;
+      const weatherDescription = weatherData.weather[0].description;
       const weatherIcon = weatherData.weather[0].icon;
-      const iconUrl = "https://openweathermap.org/img/wn/10d@2x.png";
+      const iconUrl = `https://openweathermap.org/img/wn/${weatherIcon}@4x.png`;
+      const humidity = weatherData.main.humidity;
 
       document.querySelector(
         ".js-banner-weather"
-      ).innerHTML = `<div class='daily-weather-info'> 현재 ${cityName}의 온도: ${temperature}°C <br> 체감온도: ${feels_like}°C <br> 상태: <img src='${iconUrl}'></div>`;
+      ).innerHTML = `<div class='daily-weather-info'> <div id='city-name'>Sweden, ${cityName} </div> <br> <div id='icon-current-temp'> <img src='${iconUrl}'> <span> <p id='current-temp'>${temperature}°C </p> <p id='current-humidity'>RH : ${humidity}%</p> </span> </div> <br> <div id='description-temp-container'> ${weatherDescription} <div id='temp-divider'></div> Feels like: ${feelsLike}°C</div> </div> `;
     } catch (error) {
       console.error("날씨 정보를 가져오는 데 실패했습니다:", error.message);
     }
